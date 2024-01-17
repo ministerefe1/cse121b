@@ -21,6 +21,6 @@ yearElement.textContent = currentYear;
 
 
 /* Step 5 - Array */
-let favoriteFood = ["Beans", "Rice", "Cereals", "Cassava", "Yam"];
+let favoriteFood = ["Beans", "Rice", "Cereals", "Chicken", "Ukodo", "Cassava", "Yam"];
 foodElement.innerHTML = "<br>" + favoriteFood.join("<br>");
 
