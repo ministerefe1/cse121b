@@ -55,14 +55,22 @@ myProfile.hobbies.forEach (item => {
     document.querySelector("#hobbies").appendChild(li);
 })
 
+// /* Places Lived DataList */
+// myProfile.placesLived.forEach(item => {
+//     let place = item.place;
+//     let years = item.years;
+//     let li = document.createElement("li");
+//     li.textContent = `Lived in ${place} for ${years} years`;
+//     document.querySelector("#places-lived").appendChild(li);
+// });
+
 /* Places Lived DataList */
-myProfile.placesLived.forEach(item => {
-    let place = item.place;
-    let years = item.years;
-    let li = document.createElement("li");
+myProfile.placesLived.forEach(({ place, years }) => {
+    const li = document.createElement("li");
     li.textContent = `Lived in ${place} for ${years} years`;
     document.querySelector("#places-lived").appendChild(li);
-});
+  });
+  
 /* Hobbies List */
 
 
