@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html" class="active">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+      <div id="weather-dashboard">
+        <div id="current-weather">
+          <h2>Current Weather</h2>
+          <p id="location"></p>
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+        <div id="forecast">
+          <h2>5-Day Forecast</h2>
+          <!-- Forecast details will be displayed here dynamically -->
+        </div>
+  </div>    
+      <div id="user-input">
+        <img id="weatherIcon" src="" alt="Weather Icon">
+      <label for="locationInput">Enter Location:</label>
+      <input type="text" id="locationInput" placeholder="City, Zip Code, Coordinates">
+      <button id="searchButton">Get Weather</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
